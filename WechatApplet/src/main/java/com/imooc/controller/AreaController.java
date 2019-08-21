@@ -57,6 +57,7 @@ public class AreaController {
 		return modelMap;
 	}
 	
+	//实现修改区域信息
 	@RequestMapping(value = "/modifyarea",method = RequestMethod.POST)
 	private Map<String, Object> modifyArea(@RequestBody Area area){
 		//由于前端传的参数只能为xml,json或其他类型，所以需要@ResponseBody将对象转化为json串然后写到客户端
